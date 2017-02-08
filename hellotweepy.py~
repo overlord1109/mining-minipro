@@ -8,19 +8,18 @@ import base64
                 list(itertools.islice(i2, page_size)))
         if len(page) == 0:
             break
-        yield page"""
+        yield page
+"""
 
-f=open('tolkien.txt', 'r')
+
+#tokens.txt is a file containing my Twitter app credentials. Replace with your own app tokens. Twitter does not allow me to share my credentials.
+#Head over to https://apps.twitter.com/ and click on "Create New App" You'll get your credentials over there and then you can plug those in this code
+#This is a workaround, I'm working on allowing users to use my credentials without encoding them in this code (fetching from a server).
+
+f=open('/home/overlord1109/twitter_credentials/tokens.txt', 'r')
 
 consumer_key=f.readline().rstrip('\n')
-
-print(consumer_key)
-
 consumer_secret=f.readline().rstrip('\n')
-
-print(consumer_secret)
-
-
 access_token=f.readline().rstrip('\n')
 access_token_secret=f.readline().rstrip('\n')
 
