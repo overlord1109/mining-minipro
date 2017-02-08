@@ -14,11 +14,11 @@ f=open('tolkien.txt', 'r')
 
 consumer_key=f.readline().rstrip('\n')
 
-#print(consumer_key)
+print(consumer_key)
 
 consumer_secret=f.readline().rstrip('\n')
 
-#print(consumer_secret)
+print(consumer_secret)
 
 
 access_token=f.readline().rstrip('\n')
